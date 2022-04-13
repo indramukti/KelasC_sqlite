@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private TemanAdapter adapter;
     private ArrayList<Teman> temanArrayList;
-    DBcontroller controler = new DBcontroller(this);
+    DBcontroller controler = new DBcontroller( this);
     String id,nm,tlp;
     private FloatingActionButton fab;
 
@@ -54,9 +54,11 @@ public class MainActivity extends AppCompatActivity {
         //memindah dari hasil query kedalam teman
         for(int i=0;i<daftarTeman.size();i++){
             Teman teman = new Teman();
+
             teman.setId(daftarTeman.get(i).get("id").toString());
             teman.setNama(daftarTeman.get(i).get("nama").toString());
             teman.setTelpon(daftarTeman.get(i).get("telpon").toString());
+
             // Pindahkan dari Teman kedalam ArrayList teman di adapter
             temanArrayList.add(teman);
         }

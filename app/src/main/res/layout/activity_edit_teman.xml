@@ -4,72 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TemanBaru">
+    tools:context=".edit_teman">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="@string/teditdata"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/textInputLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tietNama"
+            android:id="@+id/edNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cardview_light_background"
-            android:hint="Nama"
+            android:hint="@string/tnama"
             android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
             android:inputType="text|textPersonName"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/textInputLayout4"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tietTelpon"
+            android:id="@+id/edTelp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cardview_light_background"
-            android:hint="Telpon"
+            android:hint="@string/tnotelp"
             android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
             android:inputType="text|phone"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/buttonSave"
+        android:id="@+id/simpanBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:text="Simpan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
-        app:layout_constraintVertical_bias="0.197" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:text="@string/tcreatedata"
+        android:layout_marginTop="52dp"
+        android:text="@string/tsimpan"
         android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        android:backgroundTint="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
