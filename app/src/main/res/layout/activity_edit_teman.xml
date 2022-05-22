@@ -7,14 +7,14 @@
     tools:context=".edit_teman">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="216dp"
-        android:text="@string/teditdata"
+        android:text="TextView"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,17 +28,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textId">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edNama"
+            android:id="@+id/editNm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/tnama"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
             android:background="@color/white"
-            android:inputType="text|textPersonName"/>
+            android:hint="Nama"
+            android:inputType="text|textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -52,14 +52,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edTelp"
+            android:id="@+id/editTlp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/tnotelp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
             android:background="@color/white"
-            android:inputType="text|phone"/>
+            android:hint="Telpon"
+            android:inputType="text|phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -67,9 +67,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="@string/tsimpan"
-        android:textColor="@color/black"
         android:backgroundTint="@color/teal_200"
+        android:text="update"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
